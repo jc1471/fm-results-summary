@@ -4,7 +4,7 @@ import ScoreComparison from "./ScoreComparison";
 export default function Result() {
     return (
         <div className="result-section">
-            <p>Your Result</p>
+            <h1 className="result-heading">Your Result</h1>
             <FinalScore />
             <ScoreComparison/>
         </div>

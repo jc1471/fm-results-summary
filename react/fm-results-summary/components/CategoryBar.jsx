@@ -3,10 +3,15 @@
 export default function CategoryBar({ icon, category, score }) {
     return (
         <div className="category-bar">
-            <img className={category} src={icon} />
-            <p className={category}>{category}</p>
-            <span className="score-player">{score}</span>
-            <span className="score-total"> / 100</span>
+            <div className="category-name">
+                <img className={category} src={icon} />
+                <p className={category}>{category}</p>
+            </div>
+            <div className="category-score">
+                <p className="score-player">{score}</p>
+                <p className="score-total-/">/</p>
+                <p className="score-total-100">100</p>
+            </div>
         </div>
     )
 }

@@ -1,4 +1,8 @@
 :root {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+
   /** Colors **/
   /* Primary */
 
@@ -21,16 +25,112 @@
   --Pale-Blue: hsl(221, 100%, 96%);
   --Light-Lavender: hsl(241, 100%, 89%);
   --Dark-Gray-Blue: hsl(224, 30%, 27%);
-
+}
   
-  /** Fonts **/
+/** Fonts **/
 
-  @font-face {
-    font-family: "Hanken Grotesk";
-    src: url(https://fonts.google.com/specimen/Hanken+Grotesk);
-    font-size: 18px;
-  }
-
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url("./assets/fonts/HankenGrotesk-VariableFont_wght.ttf") format("truetype");
+  font-style: normal;
+  letter-spacing: 2px;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  background-color: yellow;
+  height: 100vh;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 16px;
+}
 
+h1 {
+  font-size: 1rem;
+}
+
+/* Results Section */
+
+.result-section {
+  position: relative;
+  background-color: lightblue;
+  width: 100vw;
+  height: 40vh;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: red solid 5px;
+}
+
+.result-heading {
+  border: black solid 1px;
+}
+
+.final-score {
+  background-color: blue;
+  border: green solid 5px;
+  border-radius: 50%;
+  position: relative;
+  height: 100px; 
+  width: 100px;
+}
+
+.final-score > h1 {
+  font-size: 3rem;
+  margin-top: 10px;
+}
+
+.final-score > h2 {
+  font-size: 0.85rem;
+  margin-top: -36px;
+}
+
+.score-comparison {
+  width: 75%;
+}
+
+/* Summary Section */
+
+.summary-section {
+  border: 4px purple solid;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.summary-heading {
+  position: relative;
+  margin-left: 5%;
+  border: black solid 1px;
+}
+
+.category-bar {
+  display: flex;
+  flex-direction: row;
+  border: 2px green solid;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.category-name {
+  display: flex;
+  flex-direction: row;
+}
+
+.category-score {
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+}
+
+.continue-btn {
+  background-color: blue;
+  color: white;
+  padding: 15px;
+  width: 80%;
+  border-radius: 30px;
+}

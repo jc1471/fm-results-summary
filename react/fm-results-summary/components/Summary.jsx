@@ -4,8 +4,8 @@ import Continue from "./Continue";
 export default function Summary() {
     return (
         <div className="summary-section">
-            <p>Summary</p>
-            <CategoryList />
+            <h1 className="summary-heading">Summary</h1>
+            <CategoryList className="category-list"/>
             <Continue />
         </div>
     )
