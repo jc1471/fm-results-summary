@@ -36,11 +36,15 @@
   letter-spacing: 2px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
   background-color: var(--White);
-  height: 100vh;
+  height: 100%;
   font-family: "Hanken Grotesk", sans-serif;
   font-size: 16px;
   font-weight: 550;
@@ -50,10 +54,19 @@ h1 {
   font-size: 1rem;
 }
 
+/* App Parent Container */
+
+.results-summary-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
 /* Results Section */
 
 .result-section {
-  position: relative;
+
   /*background-color: var(--Light-Slate-Blue);*/
   background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
   width: 100vw;
@@ -75,7 +88,6 @@ h1 {
   /*background-color: var(--Violet-Blue);*/
   background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
   border-radius: 50%;
-  position: relative;
   height: 125px; 
   width: 125px;
 }
@@ -155,10 +167,14 @@ h1 {
 .continue-btn {
   background-color: var(--Dark-Gray-Blue);
   color: var(--White);
-
   padding: 15px;
   width: 80%;
   border-radius: 40px;
+}
+
+.continue-btn:hover {
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    cursor: pointer;
 }
 
 /* Category name colours */
@@ -173,4 +189,46 @@ h1 {
 }
 .Visual {
   color: var(--Cobalt-Blue);
+}
+
+/* Desktop View */
+@media screen and (min-width: 480px) {
+
+  h1 {
+    font-size: 3rem;
+  }
+  .results-summary-container {
+  flex-direction: row;
+  font-size: 2rem;
+}
+
+  .result-section {
+    height: 100vh;
+    flex: 1;
+    border-radius: 25px;
+    justify-content: space-evenly;
+  }
+
+  .final-score {
+  height: 300px; 
+  width: 300px;
+}
+
+.final-score > h1 {
+  font-size: 7rem;
+  margin-top: 70px;
+  color: var(--White);
+}
+
+.final-score > h2 {
+  font-size: 1.5rem;
+  margin-top: -80px;
+  color: var(--Light-Lavender);
+  }
+    .summary-section {
+    height: 100vh;
+    flex: 1;
+    justify-content: space-evenly;
+  }
+
 }
