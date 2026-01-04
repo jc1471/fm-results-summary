@@ -1,16 +1,17 @@
-# React + Vite
+# Resulsts Summary Component
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Live Demo
+- https://fm-social-links-profile-gilt.vercel.app/
 
-Currently, two official plugins are available:
+## Summary
+This project is a responsive Test Results Component. It includes a section which calculates an average based on user-score (provided in json file), as well as giving a summary breakdown of scores in individual sections.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
+- Vanilla HTML/CSS
+- React + Vite
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Installation
+1. Clone the repo: https://github.com/jc1471/fm-results-summary.git
+2. Navigate to the react folder: cd react
+3. Install dependencies: npm install
+4. Run development server: npm run dev
